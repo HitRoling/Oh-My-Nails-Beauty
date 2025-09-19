@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" type="image/x-icon" href="favicon.ico">    
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oh My Nails & Beauty - Elevate Your Glow!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppin <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Yearning for Your Yes? Yarn with Us!</h2>
+            <div class="contact-content">
+                <p>We're wild with wonder that you're wooing Oh My Nails & Beauty for your next nectarous nurture. From fleeting flutters to fervent fantasies, we're primed to perfect your paradise with pizzazz.</p>
+                <p>📍 Sunshine Sanctuary, [Your City, South Africa] | 🕒 Mon-Sat: 9AM-7PM | 🌺 Bookings & Breezy Drops Delighted!</p>
+                <p>Inquiries? Inspirations? Pour the petals – your perfect petal-push is a ping away.</p>
+                <div class="contact-links">
+                    <a href="tel:+27662989604" class="phone-link">📞 Dial the Dream</a>
+                    <a href="https://wa.me/27662989604" class="whatsapp-btn" target="_blank">💬 Sparkle on WhatsApp</a>
+                    <a href="https://www.facebook.com/share/1EMQePacBu/" class="fb-link" target="_blank">📘 Bloom on Facebook</a>
+                </div>
+            </div>
+        </div>
+    </sections', sans-serif;
+            background: linear-gradient(135deg, #fce4ec 0%, #f8bbd9 25%, #f3e5f5 50%, #f8bbd9 75%, #fce4ec 100%);
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(20px);
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 25px rgba(233, 30, 99, 0.4);
+            border-bottom: 3px solid #f8bbd9;
+            transition: all 0.3s ease;
+            transform: translateY(0);
+        }
+        header.hidden {
+            transform: translateY(-100%);
+        }
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .logo-banner {
+            width: 90px;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(233, 30, 99, 0.6);
+            transition: transform 0.3s ease;
+        }
+        .logo-banner:hover {
+            transform: scale(1.1) rotate(2deg);
+        }
+        h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 1.8em;
+            color: #e91e63;
+            text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.9);
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+            align-items: center;
+        }
+        nav a {
+            text-decoration: none;
+            color: #e91e63;
+            font-weight: 600;
+            font-size: 0.95em;
+            transition: all 0.3s ease;
+            position: relative;
+            padding: 5px 10px;
+            border-radius: 15px;
+        }
+        nav a:hover {
+            color: #c2185b;
+            background: rgba(248, 187, 217, 0.3);
+            transform: translateY(-2px);
+        }
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background: #e91e63;
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
+        }
+        nav a:hover::after {
+            width: 60%;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('banner.jpg') center/cover no-repeat fixed;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+            margin-top: 65px;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.2);
+        }
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            animation: fadeInUp 2s ease-out;
+            max-width: 900px;
+            padding: 0 20px;
+            width: 100%;
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(80px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .hero h2 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 4.5em;
+            margin-bottom: 20px;
+            text-shadow: 3px 3px 10px rgba(0,0,0,0.7);
+        }
+        .hero p {
+            font-size: 1.7em;
+            margin-bottom: 30px;
+            font-weight: 300;
+        }
+        .cta-btn {
+            background: linear-gradient(45deg, #e91e63, #c2185b);
+            color: white;
+            padding: 20px 40px;
+            border: none;
+            border-radius: 40px;
+            font-size: 1.3em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.4s ease;
+            text-decoration: none;
+            display: inline-block;
+            box-shadow: 0 5px 20px rgba(233, 30, 99, 0.4);
+        }
+        .cta-btn:hover {
+            transform: scale(1.1) translateY(-4px);
+            box-shadow: 0 10px 30px rgba(233, 30, 99, 0.5);
+        }
+
+        /* Sections */
+        section {
+            padding: 100px 0;
+        }
+        .section-title {
+            text-align: center;
+            font-family: 'Dancing Script', cursive;
+            font-size: 4em;
+            color: #e91e63;
+            margin-bottom: 80px;
+            text-shadow: 2px 2px 6px rgba(255, 255, 255, 0.9);
+        }
+
+        /* About Section */
+        .about {
+            background: rgba(255, 255, 255, 0.97);
+            text-align: center;
+        }
+        .about-content {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .about p {
+            font-size: 1.25em;
+            margin-bottom: 35px;
+            animation: slideInLeft 1.5s ease-out;
+            opacity: 0;
+            animation-fill-mode: forwards;
+        }
+        .about p:nth-child(1) { animation-delay: 0.4s; }
+        .about p:nth-child(2) { animation-delay: 0.8s; }
+        .about p:nth-child(3) { animation-delay: 1.2s; }
+        @keyframes slideInLeft {
+            from { opacity: 0; transform: translateX(-80px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        /* Services Section */
+        .services {
+            background: linear-gradient(135deg, #fce4ec 0%, #f8bbd9 100%);
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 40px;
+        }
+        .service-card {
+            background: white;
+            padding: 45px 35px;
+            border-radius: 35px;
+            text-align: center;
+            box-shadow: 0 12px 35px rgba(233, 30, 99, 0.3);
+            transition: all 0.5s ease;
+            position: relative;
+            overflow: hidden;
+            border: 2px solid rgba(233, 30, 99, 0.2);
+        }
+        .service-card::before {
+            content: '💖';
+            position: absolute;
+            top: 25px;
+            right: 25px;
+            font-size: 2.8em;
+            animation: heartbeat 3s infinite;
+        }
+        @keyframes heartbeat {
+            0%, 100% { transform: scale(1); opacity: 0.7; }
+            50% { transform: scale(1.2); opacity: 1; }
+        }
+        .service-card:hover {
+            transform: translateY(-25px) scale(1.04);
+            box-shadow: 0 25px 50px rgba(233, 30, 99, 0.4);
+        }
+        .service-card h3 {
+            color: #e91e63;
+            margin-bottom: 25px;
+            font-size: 2.2em;
+            font-family: 'Dancing Script', cursive;
+        }
+        .service-icon {
+            font-size: 4.5em;
+            margin-bottom: 30px;
+            display: block;
+            animation: bounce 3s infinite;
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-20px); }
+            60% { transform: translateY(-10px); }
+        }
+
+        /* Gallery Section */
+        .gallery {
+            background: rgba(255, 255, 255, 0.97);
+        }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 30px;
+        }
+        .gallery-img {
+            width: 100%;
+            height: 320px;
+            object-fit: cover;
+            border-radius: 30px;
+            transition: all 0.5s ease;
+            box-shadow: 0 10px 30px rgba(233, 30, 99, 0.4);
+            border: 3px solid rgba(233, 30, 99, 0.3);
+        }
+        .gallery-img:hover {
+            transform: scale(1.12) rotate(4deg);
+            box-shadow: 0 20px 50px rgba(233, 30, 99, 0.5);
+        }
+        .gallery-note {
+            text-align: center;
+            margin-top: 60px;
+            font-size: 1.3em;
+            color: #e91e63;
+            font-style: italic;
+            font-family: 'Dancing Script', cursive;
+        }
+
+        /* Contact Section */
+        .contact {
+            background: linear-gradient(135deg, #fce4ec 0%, #f8bbd9 100%);
+            text-align: center;
+        }
+        .contact-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .contact p {
+            font-size: 1.25em;
+            margin-bottom: 30px;
+        }
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 50px;
+        }
+        .phone-link, .whatsapp-btn, .fb-link {
+            padding: 18px 30px;
+            border-radius: 35px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.4s ease;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            font-size: 1.2em;
+        }
+        .phone-link {
+            background: rgba(233, 30, 99, 0.1);
+            color: #e91e63;
+        }
+        .phone-link:hover {
+            background: rgba(233, 30, 99, 0.2);
+            transform: translateY(-4px);
+        }
+        .whatsapp-btn {
+            background: linear-gradient(45deg, #25D366, #128C7E);
+            color: white;
+        }
+        .whatsapp-btn:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+        }
+        .fb-link {
+            background: linear-gradient(45deg, #3b5998, #4267B2);
+            color: white;
+        }
+        .fb-link:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 25px rgba(59, 89, 152, 0.4);
+        }
+
+        /* Footer */
+        footer {
+            background: linear-gradient(45deg, #e91e63, #c2185b);
+            color: white;
+            text-align: center;
+            padding: 40px 0;
+            font-family: 'Dancing Script', cursive;
+            font-size: 1.4em;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header {
+                padding: 4px 0;
+            }
+            .header-content {
+                flex-direction: column;
+                gap: 8px;
+                text-align: center;
+            }
+            .logo-section {
+                flex-direction: column;
+                gap: 4px;
+            }
+            .logo-banner {
+                width: 60px;
+            }
+            h1 {
+                font-size: 1.2em;
+            }
+            nav ul {
+                gap: 12px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            nav a {
+                font-size: 0.85em;
+                padding: 3px 6px;
+            }
+            .hero {
+                height: 100vh;
+                margin-top: 50px;
+                background-attachment: scroll;
+            }
+            .hero h2 {
+                font-size: 3em;
+            }
+            .hero p {
+                font-size: 1.2em;
+            }
+            .section-title {
+                font-size: 2.8em;
+            }
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+            }
+            .service-card {
+                padding: 30px 20px;
+            }
+            .service-icon {
+                font-size: 3.5em;
+                margin-bottom: 20px;
+            }
+            .service-card h3 {
+                font-size: 1.8em;
+                margin-bottom: 15px;
+            }
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+            }
+            .gallery-img {
+                height: 200px;
+            }
+            .contact-links {
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+            }
+            .phone-link, .whatsapp-btn, .fb-link {
+                padding: 12px 20px;
+                font-size: 1em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 15px;
+            }
+            .hero h2 {
+                font-size: 2.5em;
+            }
+            .service-card {
+                padding: 25px 15px;
+            }
+            .service-icon {
+                font-size: 3em;
+            }
+            .service-card h3 {
+                font-size: 1.5em;
+            }
+            .gallery-img {
+                height: 180px;
+            }
+            .services-grid, .gallery-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            nav ul {
+                gap: 8px;
+            }
+            nav a {
+                font-size: 0.8em;
+                padding: 2px 4px;
+            }
+            .section-title {
+                font-size: 2.4em;
+            }
+        }
+
+        /* High-res support for 4K */
+        @media (min-resolution: 300dpi) {
+            .hero {
+                background-size: cover;
+            }
+            .gallery-img {
+                image-rendering: -webkit-optimize-contrast;
+                image-rendering: crisp-edges;
+            }
+        }
+
+        /* Sparkle Animations */
+        .sparkle {
+            position: fixed;
+            width: 8px;
+            height: 8px;
+            background: #ff69b4;
+            border-radius: 50%;
+            animation: sparkleAnim 3s infinite;
+            pointer-events: none;
+            z-index: 999;
+        }
+        @keyframes sparkleAnim {
+            0% { opacity: 0; transform: scale(0) rotate(0deg); }
+            50% { opacity: 1; transform: scale(1.2) rotate(180deg); }
+            100% { opacity: 0; transform: scale(0) rotate(360deg); }
+        }
+
+        /* Nail Fall Animation */
+        .nail-animation {
+            position: fixed;
+            font-size: 4em;
+            color: #e91e63;
+            animation: fall 8s linear infinite;
+            z-index: 999;
+            pointer-events: none;
+        }
+        @keyframes fall {
+            0% { transform: translateY(-100vh) rotate(0deg); opacity: 1; }
+            100% { transform: translateY(100vh) rotate(1080deg); opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Floating Nail Animations -->
+    
+    <header id="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <img src="logo.jpg" alt="Oh My Nails & Beauty Logo" class="logo-banner">
+                    <h1>Oh My Nails & Beauty</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h2>Blossom into Your Boldest Beauty</h2>
+            <p>Immerse in a garden of glittering nail fantasies and lavish beauty blooms, tailored to awaken your wildest whims. From petal-soft sheens to fireworks of flair, we cultivate confidence that captivates.</p>
+            <a href="#contact" class="cta-btn">Bloom with Us Now 🌸</a>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">Our Radiant Roots</h2>
+            <div class="about-content">
+                <p>Deep in the dazzle of our dreamy district, Oh My Nails & Beauty unfurled from an unquenchable quest for quirky queens and glittering graces. Orchestrated by a bouquet of beauty botanists and nail nurturers extraordinaire, we've been nurturing nectar-sweet nails from our first flourish.</p>
+                <p>Our golden touch? An obsession with opulent, ocean-friendly elixirs that caress your claws with care, yielding yields of youthfulness that withstand whims and woes. Whether whirlwind wedding whims or whisper-quiet wellness wishes, our oasis is your odyssey to originality and opulence.</p>
+                <p>Envision ensconcing in silken seats, savoring sun-kissed sips, and seeing your secret sketches spring to splendor under our artful auras. We're beyond a boutique – we're a ballet of bliss, bravery, and breathtaking beauty!</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">Delight in Our Darling Delights</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <span class="service-icon">💅</span>
+                    <h3>Golden Manicure Glow</h3>
+                    <p>Illuminate your essence with gel galaxies, acrylic auras, or heritage hues. Essence-enriched for endurance and effervescence that echoes eternally. For the goddess glowing on the go.</p>
+                </div>
+                <div class="service-card">
+                    <span class="service-icon">🦶</span>
+                    <h3>Heavenly Pedicure Harmony</h3>
+                    <p>Dissolve into a dreamy drench, a honeyed hone, and a hue that hums. Infuse iris essences for that idyllic infinity – feet that frolic in finesse!</p>
+                </div>
+                <div class="service-card">
+                    <span class="service-icon">🎨</span>
+                    <h3>Whimsy Nail Wonderland</h3>
+                    <p>Unfetter your fable with flourish friezes, shimmer symphonies, or jewel jamborees. From hushed harmonies to high-drama hallelujahs, your yarn yields the spotlight.</p>
+                </div>
+                <div class="service-card">
+                    <span class="service-icon">💄</span>
+                    <h3>Enchantress Extras</h3>
+                    <p>Finalize your fairy with feathery fans, filigree fringes, or luminous layers. Your ultimate utopia for an alluring allure that astonishes always.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <h2 class="section-title">Wander Our Whimsy Showcase</h2>
+            <div class="gallery-grid">
+                <img src="nail1.png" alt="Sun-kissed sunset swirl nails" class="gallery-img">
+                <img src="nail2.png" alt="Golden glitter galaxy nails" class="gallery-img">
+                <img src="nail3.png" alt="Butterfly blush French nails" class="gallery-img">
+                <img src="nail4.png" alt="Tangerine tango fierce tips" class="gallery-img">
+                <img src="nail5.png" alt="Honeydew haze ombre set" class="gallery-img">
+                <img src="nail6.png" alt="Amber allure velvet vibe" class="gallery-img">
+            </div>
+            <p class="gallery-note">Infuse your icons to illuminate your inimitable intrigue! 💅☀️</p>
+        </div>
+    </section>
+
+   <section class="contact" id="contact">
+    <div class="container">
+        <h2 class="section-title">Yearning for Your Yes? Yarn with Us!</h2>
+        <div class="contact-content">
+            <p>At Oh My Nails & Beauty, your dream look is only a conversation away. Whether you’re seeking subtle elegance or sparkling statements, we’re here to make it happen.</p>
+            <p>💌 Connect with us anytime for bookings or inspiration – your beauty journey begins with a simple message.</p>
+            <p>✨ Let’s make your beauty dreams bloom together!</p>
+            <div class="contact-links">
+                <a href="tel:+27662989604" class="phone-link">📞 Dial the Dream</a>
+                <a href="https://wa.me/27662989604" class="whatsapp-btn" target="_blank">💬 Sparkle on WhatsApp</a>
+                <a href="https://www.facebook.com/share/1EMQePacBu/" class="fb-link" target="_blank">📘 Bloom on Facebook</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Oh My Nails & Beauty. Nurturing Nymphs, Tip by Tip. 💖🌺</p>
+        </div>
+    </footer>
+
+    <script>
+        // Header behavior: show only when at top (scrollY === 0)
+        const header = document.getElementById('header');
+
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (scrollTop === 0) {
+                header.classList.remove('hidden');
+            } else {
+                header.classList.add('hidden');
+            }
+        });
+
+        // Generate floating nail animations
+        function createNail() {
+            const nail = document.createElement('div');
+            nail.className = 'nail-animation';
+            const emojis = ['💅', '✨', '💖', '🌸', '⭐', '🌺', '💎', '🌟', '🦋'];
+            nail.innerHTML = emojis[Math.floor(Math.random() * emojis.length)];
+            nail.style.left = Math.random() * 100 + 'vw';
+            nail.style.animationDuration = (Math.random() * 6 + 5) + 's';
+            nail.style.animationDelay = Math.random() * 5 + 's';
+            document.body.appendChild(nail);
+            setTimeout(() => {
+                nail.remove();
+            }, 11000);
+        }
+
+        setInterval(createNail, 1500);
+
+        // Add sparkles randomly
+        function createSparkle() {
+            const sparkle = document.createElement('div');
+            sparkle.className = 'sparkle';
+            sparkle.style.left = Math.random() * 100 + 'vw';
+            sparkle.style.top = Math.random() * 100 + 'vh';
+            sparkle.style.animationDelay = Math.random() * 4 + 's';
+            document.body.appendChild(sparkle);
+            setTimeout(() => {
+                sparkle.remove();
+            }, 3000);
+        }
+
+        setInterval(createSparkle, 1500);
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Animate elements on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -70px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.about p, .service-card, .gallery-img').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(50px)';
+            el.style.transition = 'opacity 1s ease, transform 1s ease';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
